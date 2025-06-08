@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC5638462DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC5638442DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodeld */; };
+		AC56385A2DF41D3400D51D96 /* SwingAnalyzerrWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC5638502DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC5638632DF41EBC00D51D96 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5638622DF41EBC00D51D96 /* WatchConnectivity.framework */; };
+		AC5638652DF41EC500D51D96 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5638642DF41EC500D51D96 /* WatchConnectivity.framework */; };
+		AC5638962DF4903400D51D96 /* SwingAnalyzerr.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC5638442DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC5638582DF41D3400D51D96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC5638312DF41CDF00D51D96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC56384F2DF41D3300D51D96;
+			remoteInfo = "SwingAnalyzerrWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC56385E2DF41D3400D51D96 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AC56385A2DF41D3400D51D96 /* SwingAnalyzerrWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC5638392DF41CDF00D51D96 /* SwingAnalyzerr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwingAnalyzerr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5638452DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwingAnalyzerr.xcdatamodel; sourceTree = "<group>"; };
+		AC5638502DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwingAnalyzerrWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC5638622DF41EBC00D51D96 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
+		AC5638642DF41EC500D51D96 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS11.5.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AC5638712DF433A900D51D96 /* Exceptions for "ML Model" folder in "SwingAnalyzerr" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				golftrain.mlmodel,
+			);
+			target = AC5638382DF41CDF00D51D96 /* SwingAnalyzerr */;
+		};
+		AC5638722DF433A900D51D96 /* Exceptions for "ML Model" folder in "SwingAnalyzerrWatch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				golftrain.mlmodel,
+			);
+			target = AC56384F2DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */;
+		};
+		AC56388A2DF48F5600D51D96 /* Exceptions for "Models" folder in "SwingAnalyzerr" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DistanceCalculator.swift,
+				ImprovementSuggestionEngine.swift,
+				MLSwingAnalyzer.swift,
+				MotionDataManager.swift,
+				PersistenceController.swift,
+				SwingCoordinator.swift,
+				UnitsManager.swift,
+				WatchConnectivityManager.swift,
+			);
+			target = AC5638382DF41CDF00D51D96 /* SwingAnalyzerr */;
+		};
+		AC56388B2DF48F5600D51D96 /* Exceptions for "Models" folder in "SwingAnalyzerrWatch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				DistanceCalculator.swift,
+				ImprovementSuggestionEngine.swift,
+				MLSwingAnalyzer.swift,
+				MotionDataManager.swift,
+				PersistenceController.swift,
+				SwingCoordinator.swift,
+				UnitsManager.swift,
+				WatchConnectivityManager.swift,
+			);
+			target = AC56384F2DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		AC56383B2DF41CDF00D51D96 /* SwingAnalyzerr */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SwingAnalyzerr;
+			sourceTree = "<group>";
+		};
+		AC5638512DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SwingAnalyzerrWatch Watch App";
+			sourceTree = "<group>";
+		};
+		AC56386A2DF431D400D51D96 /* Models */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AC56388A2DF48F5600D51D96 /* Exceptions for "Models" folder in "SwingAnalyzerr" target */,
+				AC56388B2DF48F5600D51D96 /* Exceptions for "Models" folder in "SwingAnalyzerrWatch Watch App" target */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AC56386D2DF4339B00D51D96 /* ML Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AC5638712DF433A900D51D96 /* Exceptions for "ML Model" folder in "SwingAnalyzerr" target */,
+				AC5638722DF433A900D51D96 /* Exceptions for "ML Model" folder in "SwingAnalyzerrWatch Watch App" target */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC5638362DF41CDF00D51D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5638632DF41EBC00D51D96 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC56384D2DF41D3300D51D96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5638652DF41EC500D51D96 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC5638302DF41CDF00D51D96 = {
+			isa = PBXGroup;
+			children = (
+				AC5638682DF431BD00D51D96 /* Shared */,
+				AC56383B2DF41CDF00D51D96 /* SwingAnalyzerr */,
+				AC5638512DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */,
+				AC5638612DF41EBC00D51D96 /* Frameworks */,
+				AC56383A2DF41CDF00D51D96 /* Products */,
+				AC5638442DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodeld */,
+			);
+			sourceTree = "<group>";
+		};
+		AC56383A2DF41CDF00D51D96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC5638392DF41CDF00D51D96 /* SwingAnalyzerr.app */,
+				AC5638502DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC5638612DF41EBC00D51D96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5638642DF41EC500D51D96 /* WatchConnectivity.framework */,
+				AC5638622DF41EBC00D51D96 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC5638682DF431BD00D51D96 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AC56386D2DF4339B00D51D96 /* ML Model */,
+				AC56386A2DF431D400D51D96 /* Models */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC5638382DF41CDF00D51D96 /* SwingAnalyzerr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC5638492DF41CE000D51D96 /* Build configuration list for PBXNativeTarget "SwingAnalyzerr" */;
+			buildPhases = (
+				AC5638352DF41CDF00D51D96 /* Sources */,
+				AC5638362DF41CDF00D51D96 /* Frameworks */,
+				AC5638372DF41CDF00D51D96 /* Resources */,
+				AC56385E2DF41D3400D51D96 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC5638592DF41D3400D51D96 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AC56383B2DF41CDF00D51D96 /* SwingAnalyzerr */,
+			);
+			name = SwingAnalyzerr;
+			packageProductDependencies = (
+			);
+			productName = SwingAnalyzerr;
+			productReference = AC5638392DF41CDF00D51D96 /* SwingAnalyzerr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC56384F2DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC56385B2DF41D3400D51D96 /* Build configuration list for PBXNativeTarget "SwingAnalyzerrWatch Watch App" */;
+			buildPhases = (
+				AC56384C2DF41D3300D51D96 /* Sources */,
+				AC56384D2DF41D3300D51D96 /* Frameworks */,
+				AC56384E2DF41D3300D51D96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AC5638512DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */,
+			);
+			name = "SwingAnalyzerrWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "SwingAnalyzerrWatch Watch App";
+			productReference = AC5638502DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC5638312DF41CDF00D51D96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					AC5638382DF41CDF00D51D96 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					AC56384F2DF41D3300D51D96 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+				};
+			};
+			buildConfigurationList = AC5638342DF41CDF00D51D96 /* Build configuration list for PBXProject "SwingAnalyzerr" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC5638302DF41CDF00D51D96;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = AC56383A2DF41CDF00D51D96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC5638382DF41CDF00D51D96 /* SwingAnalyzerr */,
+				AC56384F2DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC5638372DF41CDF00D51D96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC56384E2DF41D3300D51D96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC5638352DF41CDF00D51D96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5638462DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC56384C2DF41D3300D51D96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5638962DF4903400D51D96 /* SwingAnalyzerr.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC5638592DF41D3400D51D96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC56384F2DF41D3300D51D96 /* SwingAnalyzerrWatch Watch App */;
+			targetProxy = AC5638582DF41D3400D51D96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC5638472DF41CE000D51D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LSWT2JFA58;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC5638482DF41CE000D51D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LSWT2JFA58;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC56384A2DF41CE000D51D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwingAnalyzerr/SwingAnalyzerr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LSWT2JFA58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veen.SwingAnalyzerr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC56384B2DF41CE000D51D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwingAnalyzerr/SwingAnalyzerr.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LSWT2JFA58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veen.SwingAnalyzerr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AC56385C2DF41D3400D51D96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwingAnalyzerrWatch Watch App/SwingAnalyzerrWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LSWT2JFA58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwingAnalyzerrWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SwingAnalyzerrWatch;
+				INFOPLIST_KEY_NSMotionUsageDescription = "This is used to analyze golf swings";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.veen.SwingAnalyzerr;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veen.SwingAnalyzerr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		AC56385D2DF41D3400D51D96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwingAnalyzerrWatch Watch App/SwingAnalyzerrWatch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LSWT2JFA58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwingAnalyzerrWatch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SwingAnalyzerrWatch;
+				INFOPLIST_KEY_NSMotionUsageDescription = "This is used to analyze golf swings";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.veen.SwingAnalyzerr;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.veen.SwingAnalyzerr.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC5638342DF41CDF00D51D96 /* Build configuration list for PBXProject "SwingAnalyzerr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC5638472DF41CE000D51D96 /* Debug */,
+				AC5638482DF41CE000D51D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC5638492DF41CE000D51D96 /* Build configuration list for PBXNativeTarget "SwingAnalyzerr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC56384A2DF41CE000D51D96 /* Debug */,
+				AC56384B2DF41CE000D51D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC56385B2DF41D3400D51D96 /* Build configuration list for PBXNativeTarget "SwingAnalyzerrWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC56385C2DF41D3400D51D96 /* Debug */,
+				AC56385D2DF41D3400D51D96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC5638442DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC5638452DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodel */,
+			);
+			currentVersion = AC5638452DF41CE000D51D96 /* SwingAnalyzerr.xcdatamodel */;
+			path = SwingAnalyzerr.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC5638312DF41CDF00D51D96 /* Project object */;
+}

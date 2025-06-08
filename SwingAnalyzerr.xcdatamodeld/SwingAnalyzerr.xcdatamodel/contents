@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23788.4" systemVersion="24F74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ImprovementSuggestion" representedClassName="ImprovementSuggestion" syncable="YES" codeGenerationType="class">
+        <attribute name="category" attributeType="String"/>
+        <attribute name="currentValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isActionable" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="metric" optional="YES" attributeType="String"/>
+        <attribute name="priority" attributeType="Integer 16" defaultValueString="1" usesScalarValueType="YES"/>
+        <attribute name="suggestion" attributeType="String"/>
+        <attribute name="targetValue" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timeStamp" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="SensorReading" representedClassName="SensorReading" syncable="YES" codeGenerationType="class">
+        <attribute name="accelerometerX" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerY" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerZ" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudePitch" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeRoll" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeYaw" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityX" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityY" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityZ" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="rotationRateX" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateY" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateZ" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="sequenceNumber" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="userAccelerationX" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationY" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationZ" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="swingSession" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SwingSession" inverseName="sensorData" inverseEntity="SwingSession"/>
+    </entity>
+    <entity name="SwingAnalysis" representedClassName="SwingAnalysis" syncable="YES" codeGenerationType="class">
+        <attribute name="accelerometerXMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerXMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerXMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerXStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerYMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerYMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerYMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerYStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerZMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerZMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerZMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="accelerometerZStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudePitchMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudePitchMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudePitchMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudePitchStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeRollMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeRollMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeRollMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeRollStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeYawMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeYawMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeYawMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="attitudeYawStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="averageAcceleration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="backswingTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="downswingTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="followThroughTime" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityXMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityXMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityXMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityXStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityYMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityYMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityYMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityYStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityZMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityZMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityZMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="gravityZStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="impactAcceleration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="improvementSuggestions" optional="YES" attributeType="String"/>
+        <attribute name="maxSwingSpeed" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mlConfidence" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mlRating" optional="YES" attributeType="String"/>
+        <attribute name="rotationRateXMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateXMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateXMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateXStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateYMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateYMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateYMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateYStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateZMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateZMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateZMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="rotationRateZStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="swingPlaneDeviation" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="userAccelerationXMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationXMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationXMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationXStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationYMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationYMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationYMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationYStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationZMax" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationZMean" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationZMin" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="userAccelerationZStd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="swingSession" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SwingSession" inverseName="analysis" inverseEntity="SwingSession"/>
+    </entity>
+    <entity name="SwingSession" representedClassName="SwingSession" syncable="YES" codeGenerationType="class">
+        <attribute name="calculatedDistance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="deviceType" attributeType="String" defaultValueString="AppleWatch"/>
+        <attribute name="golfClub" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="rating" optional="YES" attributeType="String"/>
+        <attribute name="swingDuration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="watchHand" attributeType="String"/>
+        <relationship name="analysis" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="SwingAnalysis" inverseName="swingSession" inverseEntity="SwingAnalysis"/>
+        <relationship name="sensorData" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="SensorReading" inverseName="swingSession" inverseEntity="SensorReading"/>
+    </entity>
+</model>
