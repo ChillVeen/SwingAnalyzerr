@@ -8,10 +8,10 @@
 
 **Advanced Golf Swing Analysis using Apple Watch & Machine Learning**
 
-[![Swift](https://img.shields.io/badge/Swift-5.9-orange?style=flat-square&logo=swift)](https://swift.org)
-[![iOS](https://img.shields.io/badge/iOS-17.0+-blue?style=flat-square&logo=apple)](https://developer.apple.com/ios/)
-[![watchOS](https://img.shields.io/badge/watchOS-10.0+-red?style=flat-square&logo=apple)](https://developer.apple.com/watchos/)
-[![SwiftUI](https://img.shields.io/badge/SwiftUI-5.0-purple?style=flat-square&logo=swift)](https://developer.apple.com/xcode/swiftui/)
+[![Swift](https://img.shields.io/badge/Swift-6.0-orange?style=flat-square&logo=swift)](https://swift.org)
+[![iOS](https://img.shields.io/badge/iOS-18.0+-blue?style=flat-square&logo=apple)](https://developer.apple.com/ios/)
+[![watchOS](https://img.shields.io/badge/watchOS-11.0+-red?style=flat-square&logo=apple)](https://developer.apple.com/watchos/)
+[![SwiftUI](https://img.shields.io/badge/SwiftUI-6.0-purple?style=flat-square&logo=swift)](https://developer.apple.com/xcode/swiftui/)
 [![Core Data](https://img.shields.io/badge/Core%20Data-Enabled-yellow?style=flat-square)](https://developer.apple.com/documentation/coredata)
 [![Watch Connectivity](https://img.shields.io/badge/Watch%20Connectivity-Synced-teal?style=flat-square)](https://developer.apple.com/documentation/watchconnectivity)
 
