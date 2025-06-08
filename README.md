@@ -71,11 +71,9 @@ SwingAnalyzer is a cutting-edge iOS and watchOS application that leverages Apple
 <div align="center">
 
 ### iPhone App
-<img src="screenshots/iphone-dashboard.png" width="200" alt="iPhone Dashboard"> <img src="screenshots/iphone-history.png" width="200" alt="iPhone History"> <img src="screenshots/iphone-analytics.png" width="200" alt="iPhone Analytics">
-
+Will be updated shortly.
 ### Apple Watch App
-<img src="screenshots/watch-recording.png" width="150" alt="Watch Recording"> <img src="screenshots/watch-results.png" width="150" alt="Watch Results"> <img src="screenshots/watch-settings.png" width="150" alt="Watch Settings">
-
+Will be updated shortly.
 </div>
 
 ---
