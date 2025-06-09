@@ -11,8 +11,7 @@ import WatchKit
 struct SwingResultsView: View {
     let results: SwingResults
     let coordinator: SwingCoordinator
-    @EnvironmentObject var unitsManager: UnitsManager
-
+    
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -39,53 +38,59 @@ struct SwingResultsView: View {
     // MARK: - Hero Section (Inspired by Default Guidelines)
     private var heroSection: some View {
         VStack(spacing: 12) {
-            Text("\(unitsManager.formatDistanceValue(results.distanceResult.estimatedDistance))")
+            // Big headline with strong visual hierarchy (48px+ guideline)
+            Text("\(Int(results.distanceResult.estimatedDistance))")
                 .font(.system(size: 52, weight: .bold))
                 .foregroundColor(.white)
             
-            Text(unitsManager.currentUnits.distanceUnit.uppercased())
+            // Subtext clearly explaining the value (neutral gray)
+            Text("YARDS")
                 .font(.system(size: 14, weight: .semibold))
-                .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5))
+                .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5)) // #6b7280 equivalent
                 .tracking(1)
             
+            // Rating badge - clean with subtle rounded corners (0.75rem guideline)
             Text(results.mlAnalysis.rating.uppercased())
                 .font(.system(size: 12, weight: .bold))
                 .foregroundColor(.white)
                 .padding(.horizontal, 12)
                 .padding(.vertical, 6)
                 .background(
-                    RoundedRectangle(cornerRadius: 6)
+                    RoundedRectangle(cornerRadius: 6) // 0.375rem for watch scale
                         .fill(ratingColor(results.mlAnalysis.rating))
                 )
         }
         .frame(maxWidth: .infinity)
-        .padding(.vertical, 16)
+        .padding(.vertical, 16) // Breathing room
     }
     
     // MARK: - Essential Metrics (Clean cards with minimal borders)
     private var essentialMetrics: some View {
-         VStack(spacing: 8) {
-             metricCard("Club Speed", value: "\(unitsManager.formatSpeedValue(results.distanceResult.clubHeadSpeed))", unit: unitsManager.currentUnits.speedUnit)
-             metricCard("Launch Angle", value: "\(Int(results.distanceResult.launchAngle))", unit: "degrees")
-             metricCard("Confidence", value: "\(results.mlAnalysis.confidencePercentage)", unit: "percent")
-         }
-     }
+        VStack(spacing: 8) {
+            // Only the 3 most important metrics
+            metricCard("Club Speed", value: "\(Int(results.distanceResult.clubHeadSpeed))", unit: "mph")
+            metricCard("Launch Angle", value: "\(Int(results.distanceResult.launchAngle))", unit: "degrees")
+            metricCard("Confidence", value: "\(results.mlAnalysis.confidencePercentage)", unit: "percent")
+        }
+    }
     
     // MARK: - Metric Card (Light shadows, clean design)
     private func metricCard(_ label: String, value: String, unit: String) -> some View {
         HStack {
+            // Body text - neutral gray, readable
             Text(label)
                 .font(.system(size: 16, weight: .medium))
-                .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5))
+                .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5)) // #6b7280
             
             Spacer()
             
+            // Value with bold typography
             HStack(alignment: .firstTextBaseline, spacing: 2) {
                 Text(value)
                     .font(.system(size: 18, weight: .bold))
                     .foregroundColor(.white)
                 
-                Text(unit == "degrees" ? "°" : (unit == "percent" ? "%" : unit))
+                Text(unit == "mph" ? "mph" : (unit == "degrees" ? "°" : "%"))
                     .font(.system(size: 12, weight: .medium))
                     .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5))
             }
@@ -93,8 +98,8 @@ struct SwingResultsView: View {
         .padding(.horizontal, 12)
         .padding(.vertical, 10)
         .background(
-            RoundedRectangle(cornerRadius: 8)
-                .fill(.white.opacity(0.03))
+            RoundedRectangle(cornerRadius: 8) // Subtle rounded corners
+                .fill(.white.opacity(0.03)) // Light, minimal background
         )
     }
     
