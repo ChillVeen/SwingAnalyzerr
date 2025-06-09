@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct iOSSettingsView: View {
-    @EnvironmentObject var unitsManager: UnitsManager
+    
     @AppStorage("units") private var units = "Imperial"
     @AppStorage("notifications") private var notificationsEnabled = true
     @AppStorage("autoSync") private var autoSyncEnabled = true
@@ -231,47 +231,7 @@ struct iOSSettingsView: View {
             )
         }
     }
-    private var unitsSection: some View {
-        VStack(alignment: .leading, spacing: 24) {
-            Text("Units")
-                .font(.system(size: 22, weight: .semibold))
-                .foregroundColor(.black)
-            
-            VStack(spacing: 16) {
-                unitsOption(.imperial)
-                unitsOption(.metric)
-            }
-        }
-    }
-    private func unitsOption(_ units: UnitsManager.Units) -> some View {
-        Button(action: {
-            unitsManager.setUnits(units)
-        }) {
-            HStack(spacing: 16) {
-                Image(systemName: unitsManager.currentUnits == units ? "checkmark.circle.fill" : "circle")
-                    .font(.system(size: 20))
-                    .foregroundColor(unitsManager.currentUnits == units ? .green : .gray)
-                
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(units.rawValue)
-                        .font(.system(size: 18, weight: .semibold))
-                        .foregroundColor(.black)
-                    
-                    Text("Distance: \(units.distanceUnit), Speed: \(units.speedUnit)")
-                        .font(.system(size: 14))
-                        .foregroundColor(.gray)
-                }
-                
-                Spacer()
-            }
-            .padding(20)
-            .background(
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(unitsManager.currentUnits == units ? Color.green.opacity(0.1) : Color.gray.opacity(0.05))
-            )
-        }
-        .buttonStyle(PlainButtonStyle())
-    }
+    
     // MARK: - Analysis Settings Section
     private var analysisSettingsSection: some View {
         VStack(alignment: .leading, spacing: 16) {

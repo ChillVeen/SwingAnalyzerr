@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SwingHistoryView: View {
-    @EnvironmentObject var unitsManager: UnitsManager
+    
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \SwingSession.timestamp, ascending: false)]
@@ -413,16 +413,15 @@ struct SwingHistoryView: View {
                 Spacer()
                 
                 // Metrics
-                // Distance with proper units
-                VStack(alignment: .trailing, spacing: 8) {
-                    Text("\(unitsManager.formatDistanceValue(swing.calculatedDistance))")
+                VStack(alignment: .trailing, spacing: 4) {
+                    Text("\(Int(swing.calculatedDistance)) yds")
                         .font(.system(size: 24, weight: .bold))
-                        .foregroundColor(.black)
-                                    
-                    Text(unitsManager.currentUnits.distanceUnit)
-                        .font(.system(size: 12, weight: .medium))
-                        .foregroundColor(.gray)
-                                }
+                        .foregroundColor(.primary)
+                    
+                    if let rating = swing.rating {
+                        ratingBadge(rating)
+                    }
+                }
                 
                 // Arrow
                 Image(systemName: "chevron.right")

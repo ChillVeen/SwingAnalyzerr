@@ -9,8 +9,7 @@ import SwiftUI
 import WatchKit
 
 struct SettingsView: View {
-    @EnvironmentObject var unitsManager: UnitsManager
-
+    
     @ObservedObject var coordinator: SwingCoordinator
     
     @AppStorage("hapticFeedback") private var hapticFeedback = true
@@ -102,14 +101,12 @@ struct SettingsView: View {
             
             Spacer()
             
-            Picker("Units", selection: $unitsManager.currentUnits) {
-                ForEach(UnitsManager.Units.allCases, id: \.self) { unit in
-                    Text(unit.rawValue).tag(unit)
-                }
+            Picker("Units", selection: $units) {
+                Text("Imperial").tag("Imperial")
+                Text("Metric").tag("Metric")
             }
             .pickerStyle(.automatic)
-            .onChange(of: unitsManager.currentUnits) { _, newUnits in
-                unitsManager.setUnits(newUnits)
+            .onChange(of: units) { _, _ in
                 WKInterfaceDevice.current().play(.click)
             }
         }

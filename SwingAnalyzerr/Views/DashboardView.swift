@@ -329,55 +329,40 @@ struct DashboardView: View {
     }
     
     // MARK: - Supporting Views (Clean cards with minimal borders)
-    // Update the metricCard method:
     private func metricCard(title: String, value: String, subtitle: String, icon: String) -> some View {
         VStack(spacing: 24) {
+            // Icon
             HStack {
                 Image(systemName: icon)
                     .font(.system(size: 24))
-                    .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5))
+                    .foregroundColor(Color(hex: "#6b7280"))
                 
                 Spacer()
             }
             
+            // Content
             VStack(alignment: .leading, spacing: 12) {
-                // Handle distance values with proper units
-                if title.contains("Distance") {
-                    Text("\(unitsManager.formatDistanceValue(Double(value) ?? 0))")
-                        .font(.system(size: 36, weight: .bold))
-                        .foregroundColor(.black)
-                    
-                    Text(title)
-                        .font(.system(size: 18, weight: .semibold))
-                        .foregroundColor(.black)
-                    
-                    Text(unitsManager.currentUnits.distanceUnit)
-                        .font(.system(size: 16))
-                        .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5))
-                } else {
-                    Text(value)
-                        .font(.system(size: 36, weight: .bold))
-                        .foregroundColor(.black)
-                    
-                    Text(title)
-                        .font(.system(size: 18, weight: .semibold))
-                        .foregroundColor(.black)
-                    
-                    Text(subtitle)
-                        .font(.system(size: 16))
-                        .foregroundColor(Color(red: 0.42, green: 0.45, blue: 0.5))
-                }
+                Text(value)
+                    .font(.system(size: 36, weight: .bold))
+                    .foregroundColor(.black)
+                
+                Text(title)
+                    .font(.system(size: 18, weight: .semibold))
+                    .foregroundColor(.black)
+                
+                Text(subtitle)
+                    .font(.system(size: 16))
+                    .foregroundColor(Color(hex: "#6b7280"))
             }
             .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding(32)
-        .background {
-            RoundedRectangle(cornerRadius: 12)
-                .fill(.white)
-                .shadow(color: .black.opacity(0.05), radius: 12, x: 0, y: 4)
-        }
+        .padding(32) // Generous padding
+        .background(
+            RoundedRectangle(cornerRadius: 12) // Subtle rounded corners
+                .fill(Color.white)
+                .shadow(color: .black.opacity(0.05), radius: 12, x: 0, y: 4) // Light shadows
+        )
     }
-
     
     private var emptyActivityCard: some View {
         VStack(spacing: 32) {
@@ -433,7 +418,7 @@ struct DashboardView: View {
             Spacer()
             
             VStack(alignment: .trailing, spacing: 8) {
-                Text(unitsManager.formatDistance(swing.calculatedDistance))
+                Text("\(Int(swing.calculatedDistance)) yds")
                     .font(.system(size: 24, weight: .bold))
                     .foregroundColor(.black)
                 
