@@ -23,9 +23,9 @@
 
 ## 🏌️ Overview
 
-SwingAnalyzer is a cutting-edge iOS and watchOS application that leverages Apple Watch sensors and machine learning to provide comprehensive golf swing analysis. Get real-time feedback, track your progress, and receive personalized coaching insights to improve your game.
+iSwing is a cutting-edge iOS and watchOS application that leverages Apple Watch sensors and machine learning to provide comprehensive golf swing analysis. Get real-time feedback, track your progress, and receive personalized coaching insights to improve your game.
 
-### 🎯 What Makes SwingAnalyzer Special
+### 🎯 What Makes iSwing Special
 
 - **🔬 Precision Analysis**: Advanced motion sensor data processing with 50+ data points per swing
 - **🤖 AI-Powered Insights**: Machine learning models trained on professional swing data
@@ -53,7 +53,7 @@ SwingAnalyzer is a cutting-edge iOS and watchOS application that leverages Apple
 ### 📊 Data & Analytics
 - **Swing History** - Complete record of all swings with filtering and search
 - **Progress Tracking** - Performance trends and improvement metrics
-- **Club-Specific Analysis** - Tailored insights for Driver, 7-Iron, 9-Iron, and more
+- **Club-Specific Analysis** - Tailored insights for Driver, Steel-7, Steel-9, and more coming soon
 - **Export Capabilities** - Share data and analysis reports
 
 ### ⚙️ Customization
@@ -140,7 +140,7 @@ Will be updated shortly.
 
 #### ⚙️ Customization
 - **Units**: Switch between yards/meters and mph/km/h
-- **Clubs**: Select from Driver, 7-Iron, 9-Iron for accurate calculations
+- **Clubs**: Select from Driver, Steel-7, Steel-9 for accurate calculations
 - **Sync**: Manual sync options and connection status
 
 #### 🔄 Data Management
