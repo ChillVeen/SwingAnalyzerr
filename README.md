@@ -1,10 +1,8 @@
-# SwingAnalyzer ⛳
+# iSwing
 
 <div align="center">
 
-<p align="center">
-  <img src="SwingAnalyzerr/Assets.xcassets/AppIcon.appiconset/AppIcon~ios-marketing.png" width="200" alt="SwingAnalyzerr Logo">
-</p>
+![PreviewBeezzzGithub](https://github.com/user-attachments/assets/326aeec7-29e8-4721-8d95-3981d1dcd59c)
 
 **Advanced Golf Swing Analysis using Apple Watch & Machine Learning**
 
