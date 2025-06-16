@@ -274,7 +274,7 @@ struct AboutView: View {
                         .padding(.top, 20)
                     
                     VStack(spacing: 8) {
-                        Text("SwingAnalyzer")
+                        Text("iSwing")
                             .font(.system(size: 20, weight: .bold))
                             .foregroundColor(.white)
                         

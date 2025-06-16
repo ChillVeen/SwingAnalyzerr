@@ -53,12 +53,11 @@ struct RecentSwingsView: View {
                         ForEach(Array(recentSwings.prefix(10)), id: \.id) { swing in
                             swingRow(swing)
                                 .listRowBackground(Color.clear)
-                                .swipeActions(edge: .trailing) {
-                                    Button("Delete") {
+                                .contextMenu {
+                                    Button("Delete", role: .destructive) {
                                         swingToDelete = swing
                                         showingDeleteAlert = true
                                     }
-                                    .tint(.red)
                                 }
                         }
                     }

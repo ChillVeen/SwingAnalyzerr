@@ -105,7 +105,7 @@ struct OnboardingView: View {
     
     private let pages = [
         OnboardingPage(
-            title: "Welcome to SwingAnalyzer",
+            title: "Welcome to iSwing",
             subtitle: "Advanced golf swing analysis using Apple Watch",
             imageName: "figure.golf",
             description: "Get real-time feedback and track your progress."

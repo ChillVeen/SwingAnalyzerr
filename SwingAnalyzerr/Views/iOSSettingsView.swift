@@ -361,7 +361,7 @@ struct iOSSettingsView: View {
                 navigationRow(
                     icon: "info.circle",
                     iconColor: .blue,
-                    title: "About SwingAnalyzer",
+                    title: "About iSwing",
                     subtitle: "App information and credits"
                 ) {
                     showingAbout = true
